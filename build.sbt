@@ -7,14 +7,9 @@ version := "0.1"
 
 scalaVersion := "2.9.2"
 
-resolvers ++= Seq(
-  "Scala Tools Releases" at "http://scala-tools.org/repo-releases",
-  "Scala Tools Snapshots" at "http://scala-tools.org/repo-snapshots",
-  "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases",
-  "Scala Tools Snapshots" at "http://scala-tools.org/repo-snapshots/"
-)
+resolvers ++= Seq("Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases")
 
-libraryDependencies ++= Seq("com.typesafe.akka" % "akka-actor" % "2.0.1")
+libraryDependencies ++= Seq("com.typesafe.akka" % "akka-actor" % "2.0.3")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
